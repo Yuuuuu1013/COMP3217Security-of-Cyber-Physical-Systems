@@ -112,7 +112,7 @@ X_test = testingdata.iloc[:, :128]
 X_test.columns = X.columns
 
 #6. Using the RandomForestClassifier test model with specific hyperparameters to adjust and fit the training data to predict the unknown labels of the test dataX_test = testingdata.iloc[:, :128]
-model=RandomForestClassifier(max_depth=27,n_estimators=160,min_samples_leaf=1,min_samples_split=2,)
+model=RandomForestClassifier(max_depth=30,n_estimators=50,min_samples_leaf=1,min_samples_split=2) #After find bestparameters can got 98.99%
 # 7.train the model
 model.fit(X,y)
 # 8. Prediction with test set
