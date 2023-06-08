@@ -18,7 +18,7 @@ from sklearn.preprocessing import StandardScaler
 tariningdata = pd.read_csv('TrainingDataBinary.csv')
 testingdata = pd.read_csv('TestingDataBinary.csv')
 
-# 2. divide the dataset into training set and testing set
+# 2. Separate the features (128 numbers) and labels (0 or 1) in the training data.
 X = tariningdata.iloc[:, :128]
 y = tariningdata.iloc[:, 128]
 
